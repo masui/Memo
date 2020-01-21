@@ -1,0 +1,20 @@
+<!--
+  これを http://pitecan.com/memo.html に置く
+-->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Scrapbox Memo</title>
+    <script type="text/javascript">
+      project = 'toshiyukimasui' // Scrapbox project name
+      d = new Date()
+      year = d.getYear() + 1900
+      month = ('0' + (d.getMonth()+1)).slice(-2)
+      day = ('0' + d.getDate()).slice(-2)
+      hour = ('0' + d.getHours()).slice(-2)
+      min = ('0' + d.getMinutes()).slice(-2)
+      sec = ('0' + d.getSeconds()).slice(-2)
+      location.href = `https://scrapbox.io/${project}/${year}${month}${day}${hour}${min}${sec}`
+    </script>
+  </head>
+</html>

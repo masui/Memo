@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+system 'xdg-open "http://pitecan.com/memo.html"'
+
