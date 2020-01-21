@@ -1,4 +1,12 @@
 #!/usr/bin/env ruby
 
-system 'xdg-open "http://pitecan.com/memo.html"'
+if `which open` != ""
+  open = "open"
+elsif `which xdg-open` != ""
+  open = "xdg-open"
+else
+  STDERR.puts "open command not found"
+  exit
+end
 
+system "#{open} http://pitecan.com/memo.html"
